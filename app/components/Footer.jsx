@@ -72,16 +72,16 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 text-xl">
-            <a href="#" className="hover:text-blue-600">
+            <a href="#" className="text-blue-600">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-pink-500">
+            <a href="#" className="text-pink-500">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-sky-400">
+            <a href="#" className="text-sky-400">
               <FaTwitter />
             </a>
-            <a href="#" className="hover:text-red-600">
+            <a href="#" className="text-red-600">
               <FaPinterest />
             </a>
           </div>
@@ -91,7 +91,7 @@ const Footer = () => {
       {/* Bottom Footer Row */}
       <div className="border-t py-4 px-4 flex justify-between items-center text-sm max-w-7xl mx-auto">
         <p>© 2025 Debaco. All rights reserved.</p>
-        <Image src="/img/footer.png" alt="Footer Logo" width={100} height={40} />
+        <Image src="/img/footer.png" alt="Footer Logo" width={280} height={50} />
       </div>
     </footer>
   );

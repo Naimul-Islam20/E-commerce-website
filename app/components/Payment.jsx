@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheck } from "react-icons/fa6";
 
 const Payment = () => {
   const plans = [
@@ -9,8 +10,8 @@ const Payment = () => {
       features: [
         "a basic plan for payment",
         "contracts and new orders",
-        "strategy and marketing"
-      ]
+        "strategy and marketing",
+      ],
     },
     {
       name: "STANDARD",
@@ -19,8 +20,8 @@ const Payment = () => {
       features: [
         "a basic plan for payment",
         "contracts and new orders",
-        "strategy and marketing"
-      ]
+        "strategy and marketing",
+      ],
     },
     {
       name: "PREMIUM",
@@ -29,13 +30,14 @@ const Payment = () => {
       features: [
         "a basic plan for payment",
         "contracts and new orders",
-        "strategy and marketing"
-      ]
-    }
+        "strategy and marketing",
+      ],
+    },
   ];
 
   return (
     <div className="w-full bg-[url('/img/home2.jpg')] bg-cover bg-center py-32">
+      
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
         {plans.map((plan, idx) => (
           <div
@@ -44,15 +46,20 @@ const Payment = () => {
           >
             <div className="space-y-6">
               <h2 className="text-4xl font-bold">{plan.name}</h2>
-              <p className="text-3xl text-blue-400 font-semibold">{plan.price}</p>
+              <p className="text-3xl text-blue-400 font-semibold">
+                {plan.price}
+              </p>
               <p className="text-lg text-gray-600">{plan.description}</p>
-              <ul className="text-gray-700 space-y-4">
+              <ul className="  text-gray-700 space-y-4">
                 {plan.features.map((feature, i) => (
-                  <li key={i}>• {feature}</li>
+                  <li className="flex  items-start ps-4 gap-2" key={i}>
+                    <FaCheck className=" mt-1" />
+                    <span>{feature}</span>
+                  </li>
                 ))}
               </ul>
             </div>
-            <button className="px-6 py-2 border border-black  hover:bg-blue-400  hover:-translate-y-1 transition-all duration-500 ease-in-out transform ">
+            <button className=" mx-12 py-2 border border-black  hover:bg-blue-400  hover:-translate-y-1 transition-all duration-500 ease-in-out transform ">
               BUY NOW
             </button>
           </div>
