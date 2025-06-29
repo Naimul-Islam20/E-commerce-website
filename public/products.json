@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Ordinary Day",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item1.png"
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item2.png"
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item3.png"
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item4.png"
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item5.png"
+  },
+  {
+    "id": 6,
+    "title": "Product 6",
+    "price": 100,
+    "discount": {
+      "discPrice": 90,
+      "percent": "10%"
+    },
+    "page": "home",
+    "category": "cloth",
+    "img": "/img/item6.png"
+  }
+]

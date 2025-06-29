@@ -1,0 +1,4 @@
+@import "tailwindcss";
+body {
+  font-family: var(--font-libre-baskerville), serif;
+}
