@@ -2,73 +2,162 @@
   {
     "id": 1,
     "title": "Ordinary Day",
-    "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
+    "price": 59,    
     "page": "home",
     "category": "cloth",
     "img": "/img/item1.png"
   },
   {
     "id": 2,
-    "title": "Product 2",
-    "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
+    "title": "Screaming Head",
+    "price": 99,
+     "discount": 59,
     "page": "home",
     "category": "cloth",
     "img": "/img/item2.png"
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
+    "title": "Youth Style",
+    "price": 189,
     "page": "home",
     "category": "cloth",
     "img": "/img/item3.png"
   },
   {
     "id": 4,
-    "title": "Product 4",
-    "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
+    "title": "Foxy Days",
+    "price": 105,
+     "discount": 79,
     "page": "home",
     "category": "cloth",
     "img": "/img/item4.png"
   },
   {
     "id": 5,
-    "title": "Product 5",
-    "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
+    "title": "Rainy Army",
+    "price": 205,
     "page": "home",
     "category": "cloth",
     "img": "/img/item5.png"
   },
   {
     "id": 6,
-    "title": "Product 6",
+    "title": "Gray Jacke",
     "price": 100,
-    "discount": {
-      "discPrice": 90,
-      "percent": "10%"
-    },
     "page": "home",
     "category": "cloth",
     "img": "/img/item6.png"
+  },
+
+
+  {
+    "id": 7,
+    "title": "Gray Jacket",
+    "price": 189,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/item6.png"
+  },
+  {
+    "id": 8,
+    "title": "Rainy Army",
+    "price": 205,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/item5.png"
+  },
+  {
+    "id": 9,
+    "title": "Foxy Days",
+    "price": 105,    
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/item4.png"
+  },
+  {
+    "id": 10,
+    "title": "Gray Jacket",
+    "price": 289,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/masonry-home-img-1.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Rainy Army",
+    "price": 205,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/masonry-home-img-2.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Foxy Days",
+    "price": 105,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/masonry-65.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Hair Style",
+    "price": 229,
+    "page": "product-list",
+    "category": "clothParson",
+    "img": "/img/masonry-1.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Wind Jacket",
+    "price": 289,
+    "discount": 219,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/masonry-home-img-1.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Bad Shirt",
+    "price": 105,
+    "discount": 79,
+    "page": "product-list",
+    "category": "clothParson",
+    "img": "/img/featur1.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Foxy Days",
+    "price": 105,
+    "discount": 79,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/item4.png"
+  },
+  {
+    "id": 17,
+    "title": "Military Runners",
+    "price": 249,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/wide-list-img-8.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Gray Shirt",
+    "price": 229,
+    "page": "product-list",
+    "category": "cloth",
+    "img": "/img/masonry-home-img-10.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Dance Style",
+    "price":229,
+    "page": "product-list",
+    "category": "clothParson",
+    "img": "/img/masonry-2.jpg"
   }
+
+  
 ]
