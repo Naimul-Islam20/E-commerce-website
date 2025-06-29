@@ -1,4 +1,4 @@
-
+"use client";
 import { useGetProductsQuery } from "@/features/apiSlice";
 import Image from 'next/image';
 
@@ -29,7 +29,8 @@ export default function Section1() {
               <div className="absolute inset-0  bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 " />
               {/* ✅ Title + Description on hover */}
               <div className="absolute inset-0 flex flex-col justify-center items-center px-4 opacity-0 group-hover:opacity-100 transition duration-300 text-white z-20">
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold">{item.title}<span >{item.discount} </span> </h3>
+                
                 <p className="text-sm mt-2">{item.category}</p>
               </div>
             </div>

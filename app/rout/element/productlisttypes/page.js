@@ -4,7 +4,7 @@ import Secton1 from './section1'
 export default function TeamPage() {
   return (
     <div>
-      {/* <Secton1/> */}
+      <Secton1/>
      
     </div>
   );

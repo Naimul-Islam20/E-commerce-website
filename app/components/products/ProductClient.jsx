@@ -32,9 +32,9 @@ export default function ProductClient() {
             className="w-full h-[420px] object-contain"
           />
           <h3 className="text-lg font-semibold text-black text-center mt-2">
-            {prod.title}
+            {prod.title} 
           </h3>
-          <p className="text-black text-center">Price: ${prod.price}</p>
+          <p className="text-black text-center"><span className="line-through">Price: ${prod.price}</span><span className="m-2 bg-amber-300">{prod.discount} </span> </p>
         </div>
       ))}
     </div>
