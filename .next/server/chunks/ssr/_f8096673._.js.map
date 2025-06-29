@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///D:/Next_js/E_commerce/app/app/page.js"],"sourcesContent":["import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <main>\n      <div>\n        <h1>Hello world</h1>\n      </div>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBACC,cAAA,8OAAC;0BAAG;;;;;;;;;;;;;;;;AAIZ","debugId":null}}]
-}
