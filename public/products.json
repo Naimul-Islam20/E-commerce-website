@@ -164,98 +164,98 @@
 
   {
     "id": 20,
-    "title": "Urban Vision",
+    "title": "Blue jacket",
     "price": 199,
     "page": "portfolio",
     "category": "creative",
-    "img": "/img/portfolio-1.jpg"
+    "img": "/img/wide-list-img.jpg"
   },
   {
     "id": 21,
-    "title": "Abstract Mood",
+    "title": "Classic Hoodi",
     "price": 259,
     "page": "portfolio",
-    "category": "art",
-    "img": "/img/portfolio-2.jpg"
+    "category": "clothParson",
+    "img": "/img/port-imag-4.jpg"
   },
   {
     "id": 22,
-    "title": "Dark Layer",
+    "title": "Black T-shirt",
     "price": 179,
     "page": "portfolio",
-    "category": "design",
-    "img": "/img/portfolio-3.jpg"
+    "category": "cloth",
+    "img": "/img/port-imag-3.jpg"
   },
   {
     "id": 23,
-    "title": "Street Feel",
+    "title": "Style Hoodi",
     "price": 149,
     "page": "portfolio",
     "category": "lifestyle",
-    "img": "/img/portfolio-4.jpg"
+    "img": "/img/port-imag-5.jpg"
   },
   {
     "id": 24,
-    "title": "Minimal Shape",
+    "title": "Prepare well",
     "price": 219,
     "page": "portfolio",
-    "category": "modern",
-    "img": "/img/portfolio-5.jpg"
+    "category": "cloth",
+    "img": "/img/port-imag-2.jpg"
   },
   {
     "id": 25,
-    "title": "Vintage Blend",
+    "title": "Gray Jacke",
     "price": 189,
     "page": "portfolio",
-    "category": "retro",
-    "img": "/img/portfolio-6.jpg"
+    "category": "cloth",
+    "img": "/img/wide-list-img-2.jpg"
   },
   {
     "id": 26,
-    "title": "Night Mood",
+    "title": "Style Sneakers",
     "price": 205,
     "page": "portfolio",
-    "category": "nightlife",
-    "img": "/img/portfolio-7.jpg"
+    "category": "Shoes",
+    "img": "/img/port-imag-6.jpg"
   },
   {
     "id": 27,
-    "title": "Golden Light",
+    "title": "Dance Style",
     "price": 239,
     "page": "portfolio",
-    "category": "photography",
-    "img": "/img/portfolio-8.jpg"
+    "category": "clothParson",
+    "img": "/img/masonry-2.jpg"
   },
   {
     "id": 28,
-    "title": "Desert Vibe",
+    "title": "Primiam Sneakers",
     "price": 189,
     "page": "portfolio",
-    "category": "travel",
-    "img": "/img/portfolio-9.jpg"
+    "category": "Shoes",
+    "img": "/img/port-imag-7.jpg"
   },
   {
     "id": 29,
-    "title": "Neon Touch",
+    "title": "Wall of rain",
     "price": 175,
     "page": "portfolio",
-    "category": "modern",
-    "img": "/img/portfolio-10.jpg"
+    "category": "clothParson",
+    "img": "/img/port-imag-8.jpg"
   },
   {
     "id": 30,
-    "title": "Calm Nature",
+    "title": "Prepare well",
     "price": 165,
     "page": "portfolio",
-    "category": "nature",
-    "img": "/img/portfolio-11.jpg"
+    "category": "cloth",
+    "img": "/img/port-imag-9.jpg"
   },
   {
     "id": 31,
-    "title": "Bold Contrast",
+    "title": "Fall hiking",
     "price": 245,
     "page": "portfolio",
-    "category": "bold",
-    "img": "/img/portfolio-12.jpg"
+    "category": "clothParson",
+    "img": "/img/port-imag-11.jpg"
   }
 ]
