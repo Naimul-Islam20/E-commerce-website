@@ -1,8 +1,9 @@
 "use client";
 import { useGetProductsQuery } from "@/features/apiSlice";
 import Image from "next/image";
+import Section1 from './section1';
 
-export default function Section1() {
+export default function SectionPage() {
   const { data, error } = useGetProductsQuery();
 
   if (error) {
@@ -13,6 +14,7 @@ export default function Section1() {
 
   // page === "product-list" ফিল্টার
   const productListItems = data?.filter((item) => item.page === "product-list");
+    const SliceData = productListItems ? productListItems.slice(0, 3) : [];
 
   return (
     <div>
@@ -20,7 +22,7 @@ export default function Section1() {
         <h2 className="text-3xl font-bold mb-6 text-left">Gallery</h2>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productListItems?.map((item) => (
+          {SliceData?.map((item) => (
             <div key={item.id} className="overflow-hidden text-center">
               <div className="relative group h-75 w-full">
                 {/* Main Image */}
