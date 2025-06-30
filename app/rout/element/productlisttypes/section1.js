@@ -1,7 +1,7 @@
 "use client";
 import { useGetProductsQuery } from "@/features/apiSlice";
 import Image from "next/image";
-import Section1 from './section1';
+
 
 export default function SectionPage() {
   const { data, error } = useGetProductsQuery();
@@ -14,7 +14,7 @@ export default function SectionPage() {
 
   // page === "product-list" ফিল্টার
   const productListItems = data?.filter((item) => item.page === "product-list");
-    const SliceData = productListItems ? productListItems.slice(0, 3) : [];
+    const SliceData = productListItems ? productListItems.slice(0,3) : [];
 
   return (
     <div>
