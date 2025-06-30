@@ -1,8 +1,10 @@
-[
+
+ [
+  
   {
     "id": 1,
     "title": "Ordinary Day",
-    "price": 59,    
+    "price": 59,
     "page": "home",
     "category": "cloth",
     "img": "/img/item1.png"
@@ -11,7 +13,7 @@
     "id": 2,
     "title": "Screaming Head",
     "price": 99,
-     "discount": "$59",
+    "discount": "$59",
     "page": "home",
     "category": "cloth",
     "img": "/img/item2.png"
@@ -28,7 +30,7 @@
     "id": 4,
     "title": "Foxy Days",
     "price": 105,
-     "discount": "$79",
+    "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "home",
     "category": "cloth",
     "img": "/img/item4.png"
@@ -50,7 +52,6 @@
     "img": "/img/item6.png"
   },
 
-
   {
     "id": 7,
     "title": "Gray Jacket",
@@ -70,7 +71,7 @@
   {
     "id": 9,
     "title": "Foxy Days",
-    "price": 105,    
+    "price": 105,
     "page": "product-list",
     "category": "cloth",
     "img": "/img/item4.png"
@@ -111,7 +112,7 @@
     "id": 14,
     "title": "Wind Jacket",
     "price": 289,
-    "discount": "$219",
+    "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "product-list",
     "category": "cloth",
     "img": "/img/masonry-home-img-1.jpg"
@@ -120,7 +121,7 @@
     "id": 15,
     "title": "Bad Shirt",
     "price": 105,
-    "discount": "$79",
+     "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "product-list",
     "category": "clothParson",
     "img": "/img/featur1.jpg"
@@ -129,7 +130,7 @@
     "id": 16,
     "title": "Foxy Days",
     "price": 105,
-    "discount": "$79",
+    "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "product-list",
     "category": "cloth",
     "img": "/img/item4.png"
@@ -153,14 +154,11 @@
   {
     "id": 19,
     "title": "Dance Style",
-    "price":229,
+    "price": 229,
     "page": "product-list",
     "category": "clothParson",
     "img": "/img/masonry-2.jpg"
   },
-
-
-
 
   {
     "id": 20,
@@ -230,6 +228,7 @@
     "id": 28,
     "title": "Desert Vibe",
     "price": 189,
+    "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "portfolio",
     "category": "travel",
     "img": "/img/portfolio-9.jpg"

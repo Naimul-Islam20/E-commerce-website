@@ -120,6 +120,9 @@ const navItems = [
 ]
 
   },
+  {
+    name: "Card", href: "/rout/card"
+  }
 ];
 
 export default navItems;

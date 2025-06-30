@@ -1,0 +1,48 @@
+[33mcommit cfe72f64b45a8428bd82d0e8b117d591a71b7276[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: ce18fe4 76ca0e8
+Author: abdur rouf <abdurroufkpkh.gmail.com>
+Date:   Mon Jun 30 11:27:09 2025 +0600
+
+    Fixed merge conflict in package.json and package-lock.json
+
+[33mcommit ce18fe4204a4b5db09a200620910b90ecfc32c43[m
+Author: naimul-islam <naimulislam8828@gmail.com>
+Date:   Sun Jun 29 20:04:43 2025 +0600
+
+     Add about page and contact page and pricing page
+
+[33mcommit 76ca0e8bbe70a00ac1addab9135c1a1f2801fcfe[m
+Author: abdur rouf <abdurroufkpkh.gmail.com>
+Date:   Sun Jun 29 19:59:45 2025 +0600
+
+    product page a discount add
+
+[33mcommit 99f6ef5694736eb0609a4e8907d74f9c192cd2b3[m
+Author: abdur rouf <abdurroufkpkh.gmail.com>
+Date:   Sun Jun 29 19:19:49 2025 +0600
+
+    Updated product list and added new section1 component with images
+
+[33mcommit 2e7b59b886836692ba2a58f408cd4d49f5cbd94d[m
+Author: abdur rouf <abdurroufkpkh.gmail.com>
+Date:   Sun Jun 29 17:09:09 2025 +0600
+
+    Removed .next folder and updated .gitignore
+
+[33mcommit 8c04dc16ae4043f256bcccdd79343ca08480963b[m
+Author: naimul-islam <naimulislam8828@gmail.com>
+Date:   Sun Jun 29 13:48:06 2025 +0600
+
+    Initial commit
+
+[33mcommit 2ba792ace75c1a20a83e21d93b3fda437d466655[m
+Author: naimul-islam <naimulislam8828@gmail.com>
+Date:   Sun Jun 29 12:46:19 2025 +0600
+
+    Updated files inside app
+
+[33mcommit 50de16dcdce80f3e309501e20578ddc602ca7c20[m
+Author: naimul-islam <naimulislam8828@gmail.com>
+Date:   Tue Jun 17 21:05:13 2025 +0600
+
+    Initial commit from Create Next App
