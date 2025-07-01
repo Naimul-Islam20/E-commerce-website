@@ -7,6 +7,7 @@ import { useGetProductsQuery } from '@/features/apiSlice';
 function HoverOverlay({ onAddToCart, onAddToWishlist, onViewDetails }) {
   return (
     <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/20 rounded-md">
+      
       <div className="flex gap-4 text-2xl bg-white rounded p-3">
         <FaShoppingCart
           className="hover:text-amber-400 cursor-pointer "
@@ -49,8 +50,9 @@ export default function SectionTow() {
   const handleViewDetails = (item) => alert(`View details clicked for ${item.title}`);
 
   return (
-    <div className="container mx-auto sm:col-12 md:col-6 lg:col-4 px-16 bg-gray-100">
-      <div className="w-full  mx-auto mt-20">
+    <div className="container mx-auto sm:col-12 md:col-6 lg:col-4 px-16 bg-gray-50 pt-10 pb-30">
+      <h2 className="text-3xl font-bold mb-6 text-left">Masonry</h2>
+      <div className="w-full  mx-auto mt-10">
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
           {/* Left two stacked images (a & b) */}
           <div className="flex flex-col gap-4 w-full md:w-[25%] h-[600px]">

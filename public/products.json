@@ -85,7 +85,7 @@
     "price": 289,
     "page": "product-list",
     "category": "cloth",
-    "img": "/img/masonry-home-img-1.jpg"
+    "img": "/img/masonry-home-img-2.jpg"
   },
   {
     "id": 11,
@@ -93,7 +93,7 @@
     "price": 205,
     "page": "product-list",
     "category": "cloth",
-    "img": "/img/masonry-home-img-2.jpg"
+    "img": "/img/masonry-home-img-1.jpg"
   },
   {
     "id": 12,
@@ -139,7 +139,7 @@
     "img": "/img/item4.png"
   },
 
-  
+
   {
     "id": 17,
     "title": "Military Runners",

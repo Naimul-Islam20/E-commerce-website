@@ -30,8 +30,8 @@ export default function SectionPage() {
 
   return (
     <div>
-      <section className="container mx-auto px-4 pt-20 bg-gray-100">
-        <h2 className="text-3xl font-bold mb-6 text-left">Gallery</h2>
+      <section className="container mx-auto px-20 pt-20 pb-20 bg-gray-100">
+        <h2 className="text-3xl font-bold mb-6 text-left">Standard List</h2>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {SliceData?.map((item) => (
