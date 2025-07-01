@@ -13,7 +13,7 @@
     "id": 2,
     "title": "Screaming Head",
     "price": 99,
-    "discount": "$59",
+   "discount": { "oldPrice": 105, "discPrice": 90 },
     "page": "home",
     "category": "cloth",
     "img": "/img/item2.png"

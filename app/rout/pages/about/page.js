@@ -3,6 +3,26 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
+const slides = [
+  {
+    title: "Our Mission",
+    text: "We strive to deliver the best service to our customers and grow sustainably.",
+    name: "John Doe",
+    role: "CEO",
+  },
+  {
+    title: "Our Vision",
+    text: "To be the leading company in the market through innovation and quality.",
+    name: "Jane Smith",
+    role: "COO",
+  },
+  {
+    title: "Our Values",
+    text: "Integrity, Excellence, and Teamwork drive everything we do.",
+    name: "Robert Brown",
+    role: "CTO",
+  },
+];
 
 export default function AboutPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,7 +39,7 @@ export default function AboutPage() {
     <div>
       {/* Top Banner */}
       <div
-        className="w-full h-[80vh] bg-fixed bg-center bg-cover flex items-center justify-center"
+        className="w-full h-[65vh] bg-fixed bg-center bg-cover flex items-center justify-center"
         style={{ backgroundImage: "url('/img/about5.jpg')" }}
       >
         <h1 className="text-6xl font-bold text-white drop-shadow-lg">
@@ -32,7 +52,7 @@ export default function AboutPage() {
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
-          className="absolute left-26 top-1/2 transform -translate-y-1/2 text-3xl text-gray-600 hover:text-black"
+          className="absolute left-6 top-1/2 transform -translate-y-1/2 text-3xl text-gray-600 hover:text-black"
         >
           <FaChevronLeft />
         </button>
@@ -50,7 +70,7 @@ export default function AboutPage() {
         {/* Right Arrow */}
         <button
           onClick={nextSlide}
-          className="absolute right-26 top-1/2 transform -translate-y-1/2 text-3xl text-gray-600 hover:text-black"
+          className="absolute right-6 top-1/2 transform -translate-y-1/2 text-3xl text-gray-600 hover:text-black"
         >
           <FaChevronRight />
         </button>

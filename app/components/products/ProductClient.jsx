@@ -1,56 +1,52 @@
 "use client";
 
 import { useGetProductsQuery } from "@/features/apiSlice";
-import SkeletonCard from "./SkeletonCard";
+import SkeletonCart from "@/utils/skeletonCart";
+import CartFunction from "@/utils/cartFunction";
 
-export default function ProductClient() {
+export default function ProductList() {
   const { data, error, isLoading } = useGetProductsQuery();
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {Array.from({ length: 6 }).map((_, idx) => (
-          <SkeletonCard key={idx} />
+      <div className="grid grid-cols-3 gap-4">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <SkeletonCart key={i} />
         ))}
       </div>
     );
   }
 
-  if (error) {
-    return (
-      <p className="text-center text-red-500 mt-20">Failed to load products.</p>
-    );
-  }
+  if (error) return <p className="text-red-500">Error loading products.</p>;
 
-  // 🔥 শুধুমাত্র page === "home" filter করলাম
-  const homeProducts = data?.filter((prod) => prod.page === "home");
+  const filtered = data?.filter((item) => item.page === "home");
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {homeProducts?.map((prod, index) => (
-        <div key={index} className="flex flex-col items-center">
+      {filtered?.map((item) => (
+        <div key={item.id} className="border p-4 rounded text-center">
           <img
-            src={prod.img}
-            alt={prod.title}
-            className="w-full h-[420px] object-contain"
+            src={item.img}
+            alt={item.title}
+            className="w-full h-[300px] object-contain mb-2"
           />
-          <h3 className="text-lg font-semibold text-black text-center mt-2">
-            {prod.title}
-          </h3>
+          <h3 className="text-lg font-bold">{item.title}</h3>
 
-          {/* 🏷️ ডিসকাউন্ট চেক করে শো করি */}
-          {prod.discount  ? (
-            <p className="text-black text-center">
-              <span className="line-through text-gray-400">
-                Price: ${prod.discount.oldPrice}
+          {item.discount ? (
+            <p className="text-gray-600 mb-2">
+              <span className="line-through text-gray-400 mr-2">
+                ${item.discount.oldPrice}
               </span>
-              <span className="ml-2 bg-amber-300 px-2 py-1 rounded">
-                ${prod.discount.discPrice}
+              <span className="text-red-600 font-semibold">
+                ${item.discount.discPrice}
               </span>
             </p>
           ) : (
-            <p className="text-black text-center">Price: ${prod.price}</p>
+            <p className="text-gray-600 mb-2">${item.price}</p>
           )}
+
+          
+          <CartFunction item={item} />
         </div>
       ))}
     </div>
