@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Blue jacket",
+    "descrip": "winter",
+    "image": "/img/wide-list-img.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Black T-shirt",   
+    "descrip": "casual",
+    "image": "/img/port-imag-3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Style Hoodi",   
+    "descrip": "winter", 
+    "image": "/img/port-imag-5.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Prepare well", 
+    "descrip": "winter",  
+    "image": "/img/port-imag-2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Gray Jacke",  
+    "descrip": "winter", 
+    "image": "/img/wide-list-img-2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Style Sneakers", 
+    "descrip": "Fall",   
+    "image": "/img/port-imag-6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Primiam Sneakers",  
+    "descrip": "Walking", 
+    "image": "/img/port-imag-7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Prepare well",  
+    "descrip": "good looking", 
+    "image": "/img/port-imag-9.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Gray Jacke",    
+    "descrip": "winter",
+    "image": "/img/wide-list-img-2.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Style Sneakers", 
+    "descrip": "Latest",   
+    "image": "/img/port-imag-6.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Primiam Sneakers", 
+    "descrip": "Walking",  
+    "image": "/img/port-imag-7.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Prepare well",  
+    "descrip": "good looking", 
+    "image": "/img/port-imag-9.jpg"
+  }
+]
