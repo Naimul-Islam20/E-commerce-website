@@ -1,8 +1,15 @@
-export default function TeamPage() {
+
+import ImageText from './imageText'
+
+export default function BlogPage() {
   return (
     <div>
-      <h1>Our Team</h1>
-      <p>Team details will go here.</p>
+      
+          <ImageText/>
+           <div className='bg-gray-100'>
+            <ImageText />
+           </div>
+        
     </div>
   );
 }
