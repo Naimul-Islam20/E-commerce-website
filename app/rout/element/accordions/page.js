@@ -10,20 +10,20 @@ const FAQ = () => {
         Frequently Asked Questions
       </h2>
 
-      {/* 🔷 Flex Grid: Left + Right */}
+      {/*  Flex Grid: Left + Right */}
       <div className="flex flex-wrap justify-between gap-6">
-        {/* 🔵 Left */}
+        {/*  Left */}
         <div className="w-full md:w-[48%] space-y-4">
           <FaqToggol  />
         </div>
 
-        {/* 🔵 Right */}
+        {/*  Right */}
         <div className="w-full md:w-[48%] space-y-4">
           <FaqToggol />
         </div>
       </div>
 
-      {/* 🟢 Full Width Below */}
+      {/*  Full Width Below */}
       <div className="mt-12 space-y-4">
         <FaqToggol  />
       </div>
