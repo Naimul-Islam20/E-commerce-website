@@ -11,18 +11,15 @@ function HoverOverlay({ onAddToCart, onAddToWishlist, onViewDetails }) {
         <FaShoppingCart
           className="hover:text-amber-400 cursor-pointer "
           onClick={onAddToCart}
-          title="Add to Cart"
-        />
+          title="Add to Cart"/>
         <FaHeart
           className="hover:text-red-500 cursor-pointer"
           onClick={onAddToWishlist}
-          title="Add to Wishlist"
-        />
+          title="Add to Wishlist"/>
         <FaEye
           className="hover:text-blue-400 cursor-pointer"
           onClick={onViewDetails}
-          title="View Details"
-        />
+          title="View Details"/>
       </div>
     </div>
   );
@@ -52,8 +49,8 @@ export default function SectionTow() {
   const handleViewDetails = (item) => alert(`View details clicked for ${item.title}`);
 
   return (
-    <div className="relative z-10 flex flex-wrap justify-center gap-4 p-6">
-      <div className="w-full max-w-7xl mx-auto p-4">
+    <div className="container mx-auto sm:col-12 md:col-6 lg:col-4 px-16 bg-gray-100">
+      <div className="w-full  mx-auto mt-20">
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
           {/* Left two stacked images (a & b) */}
           <div className="flex flex-col gap-4 w-full md:w-[25%] h-[600px]">
@@ -64,13 +61,15 @@ export default function SectionTow() {
                   alt={`Image ${index + 1}`}
                   width={300}
                   height={150}
-                  className="rounded-md object-cover w-full h-full transition-transform duration-300 group-hover:-translate-y-2"
-                />
+                  className="rounded-md object-cover w-full h-full transition-transform duration-300 group-hover:-translate-y-2"/>
+                  
                 <HoverOverlay
                   onAddToCart={() => handleAddToCart(item)}
                   onAddToWishlist={() => handleAddToWishlist(item)}
                   onViewDetails={() => handleViewDetails(item)}
+                  
                 />
+                
               </div>
             ))}
           </div>
@@ -98,8 +97,9 @@ export default function SectionTow() {
               alt="Large image"
               width={600}
               height={300}
-              className="rounded-md object-cover w-full h-full"
+              className="rounded-md object-cover w-full h-full transition-transform duration-300 group-hover:-translate-y-2"
             />
+     
             <HoverOverlay
               onAddToCart={() => handleAddToCart(d)}
               onAddToWishlist={() => handleAddToWishlist(d)}
@@ -107,6 +107,7 @@ export default function SectionTow() {
             />
           </div>
         </div>
+        
       </div>
     </div>
   );

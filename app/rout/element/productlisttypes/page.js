@@ -1,5 +1,6 @@
 import Secton1 from './section1';
 import SectionTow from './sectionTow'
+import SectionThree from './sectionThree';
 
 
 export default function TeamPage() {
@@ -7,6 +8,9 @@ export default function TeamPage() {
     <div>
       <Secton1/>
       <SectionTow/>
+      <SectionThree/>
+
+
 
      
     </div>
