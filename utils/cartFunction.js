@@ -20,24 +20,19 @@ export default function CartFunction({ item }) {
     setIsAdded(true);
   };
 
-  if (isAdded) {
-    return (
-      <button
-        onClick={() => router.push("/rout/card")}
-        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-      >
-        <HiShoppingBag size={20}/>
-      </button>
-    );
-  }
-
   return (
     <button
-      onClick={handleAdd}
-      className="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700 flex items-center justify-center gap-2"
+      onClick={() => {
+        if (isAdded) {
+          router.push("/rout/card");
+        } else {
+          handleAdd();
+        }
+      }}
+      className="bg-blue-600 text-white px-3 w-10 h-10 
+ py-2 rounded hover:bg-blue-700 flex items-center justify-center gap-2 transition-all duration-200"
     >
-      <MdShoppingCart size={20} />
-      
+      {isAdded ? <HiShoppingBag size={20} /> : <MdShoppingCart size={20} />}
     </button>
   );
 }

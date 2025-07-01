@@ -15,16 +15,19 @@ export function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
 }
 
-// Add to cart (default quantity 1)
 export function addToCart(product) {
   const cart = getCart();
-  const exists = cart.find((p) => p.id === product.id);
+  const index = cart.findIndex((p) => p.id === product.id);
 
-  if (!exists) {
-    cart.push({ ...product, quantity: 1 });
-    saveCart(cart);
+  if (index === -1) {
+    cart.push({ ...product, quantity: product.quantity || 1 });
+  } else {
+    // আগের quantity overwrite করতে চাও
+    cart[index].quantity = product.quantity || cart[index].quantity;
   }
+  saveCart(cart);
 }
+
 
 // Remove from cart
 export function removeFromCart(id) {
