@@ -52,6 +52,9 @@
     "img": "/img/item6.png"
   },
 
+  
+  
+
   {
     "id": 7,
     "title": "Gray Jacket",
@@ -82,7 +85,7 @@
     "price": 289,
     "page": "product-list",
     "category": "cloth",
-    "img": "/img/masonry-home-img-1.jpg"
+    "img": "/img/masonry-home-img-2.jpg"
   },
   {
     "id": 11,
@@ -90,7 +93,7 @@
     "price": 205,
     "page": "product-list",
     "category": "cloth",
-    "img": "/img/masonry-home-img-2.jpg"
+    "img": "/img/masonry-home-img-1.jpg"
   },
   {
     "id": 12,
@@ -135,6 +138,8 @@
     "category": "cloth",
     "img": "/img/item4.png"
   },
+
+
   {
     "id": 17,
     "title": "Military Runners",
@@ -158,103 +163,9 @@
     "page": "product-list",
     "category": "clothParson",
     "img": "/img/masonry-2.jpg"
-  },
-
-  {
-    "id": 20,
-    "title": "Blue jacket",
-    "price": 199,
-    "page": "portfolio",
-    "category": "creative",
-    "img": "/img/wide-list-img.jpg"
-  },
-  {
-    "id": 21,
-    "title": "Classic Hoodi",
-    "price": 259,
-    "page": "portfolio",
-    "category": "clothParson",
-    "img": "/img/port-imag-4.jpg"
-  },
-  {
-    "id": 22,
-    "title": "Black T-shirt",
-    "price": 179,
-    "page": "portfolio",
-    "category": "cloth",
-    "img": "/img/port-imag-3.jpg"
-  },
-  {
-    "id": 23,
-    "title": "Style Hoodi",
-    "price": 149,
-    "page": "portfolio",
-    "category": "lifestyle",
-    "img": "/img/port-imag-5.jpg"
-  },
-  {
-    "id": 24,
-    "title": "Prepare well",
-    "price": 219,
-    "page": "portfolio",
-    "category": "cloth",
-    "img": "/img/port-imag-2.jpg"
-  },
-  {
-    "id": 25,
-    "title": "Gray Jacke",
-    "price": 189,
-    "page": "portfolio",
-    "category": "cloth",
-    "img": "/img/wide-list-img-2.jpg"
-  },
-  {
-    "id": 26,
-    "title": "Style Sneakers",
-    "price": 205,
-    "page": "portfolio",
-    "category": "Shoes",
-    "img": "/img/port-imag-6.jpg"
-  },
-  {
-    "id": 27,
-    "title": "Dance Style",
-    "price": 239,
-    "page": "portfolio",
-    "category": "clothParson",
-    "img": "/img/masonry-2.jpg"
-  },
-  {
-    "id": 28,
-    "title": "Primiam Sneakers",
-    "price": 189,
-    "discount": { "oldPrice": 105, "discPrice": 90 },
-    "page": "portfolio",
-    "category": "Shoes",
-    "img": "/img/port-imag-7.jpg"
-  },
-  {
-    "id": 29,
-    "title": "Wall of rain",
-    "price": 175,
-    "page": "portfolio",
-    "category": "clothParson",
-    "img": "/img/port-imag-8.jpg"
-  },
-  {
-    "id": 30,
-    "title": "Prepare well",
-    "price": 165,
-    "page": "portfolio",
-    "category": "cloth",
-    "img": "/img/port-imag-9.jpg"
-  },
-  {
-    "id": 31,
-    "title": "Fall hiking",
-    "price": 245,
-    "page": "portfolio",
-    "category": "clothParson",
-    "img": "/img/port-imag-11.jpg"
   }
-]
+
+       
+  
+
+ ]

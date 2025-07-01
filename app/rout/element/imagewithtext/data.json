@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "image":"/img/icon-with-text-img-1.png" ,
+        "title": "Extreme durability",
+        "descript": "On all jackets, parkas, coats and any other outerware winter garments."
+    },
+    {
+        "id": 2,
+        "image":"/img/icon-with-text-img-2.png" ,
+        "title": "Extreme durability",
+       "descript": "On all jackets, parkas, coats and any other outerware winter garments."
+    },
+    {
+        "id": 3,
+        "image":"/img/icon-with-text-img-3.png" ,
+        "title": "Extreme durability",
+       "descript": "On all jackets, parkas, coats and any other outerware winter garments."
+    }
+   
+]
