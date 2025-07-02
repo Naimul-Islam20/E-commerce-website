@@ -50,7 +50,7 @@ export default function CardPage() {
       </div>
 
       {/* 3 Column Layout */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl  mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left 2 Columns: Products */}
         <div className="lg:col-span-2 flex flex-col gap-6">
           {cartItems.length === 0 ? (
@@ -59,7 +59,7 @@ export default function CardPage() {
             cartItems.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col md:flex-row items-center justify-between gap-4 border border-gray-300  p-4 rounded-lg shadow-sm bg-white"
+                className="flex  md:flex-row items-center justify-between gap-4 border border-gray-300  p-4 rounded-lg shadow-sm bg-white"
               >
                 <img
                   src={item.img}

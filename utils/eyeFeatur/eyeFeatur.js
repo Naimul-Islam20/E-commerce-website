@@ -1,21 +1,32 @@
-// components/ViewImageButton.jsx
-
 "use client";
-import { useRouter } from "next/navigation";
+
+import { useState, useEffect } from "react";
+import EyeModal from "@/app/rout/eye/page"; // Modal component
+import { FaEye } from "react-icons/fa";
 
 export default function ViewImageButton({ id }) {
-  const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  const handleView = () => {
-    router.push(`/rout/eye?id=${id}`);
-  };
+  useEffect(() => {
+    setIsClient(true); // Client check to avoid hydration error
+  }, []);
+
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
+  if (!isClient) return null;
 
   return (
-    <button
-      onClick={handleView}
-      className="mt-2 bg-gray-600 text-white px-4 py-2 rounded hover:bg-green-700"
-    >
-      Im
-    </button>
+    <>
+      <button
+        onClick={handleOpen}
+        className=" px-4 py-2 bg-white rounded hover:bg-gray-50"
+      >
+       <FaEye/>
+      </button>
+
+      {showModal && <EyeModal id={id} onClose={handleClose} />}
+    </>
   );
 }
