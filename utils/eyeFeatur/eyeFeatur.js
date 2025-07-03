@@ -9,7 +9,7 @@ export default function ViewImageButton({ id }) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Client check to avoid hydration error
+    setIsClient(true);
   }, []);
 
   const handleOpen = () => setShowModal(true);
@@ -21,9 +21,9 @@ export default function ViewImageButton({ id }) {
     <>
       <button
         onClick={handleOpen}
-        className=" px-4 py-2 bg-white rounded hover:bg-gray-50"
+        className="px-3 ps-5  border-s-2  border-gray-300  py-2   text-2xl  "
       >
-       <FaEye/>
+        < FaEye className=" hover:-translate-y-1 transform duration-200 transition-all "/>
       </button>
 
       {showModal && <EyeModal id={id} onClose={handleClose} />}

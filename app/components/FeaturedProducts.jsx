@@ -48,19 +48,19 @@ const FeaturedProducts = () => {
           </h1>
 
           <p className="text-black text-base mt-6 mb-12 max-w-xl text-center">
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit. 
+            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            lorem quis bibendum auctor, nisi elit.
           </p>
         </div>
 
         {/* Slide and Info Section */}
         <div className="relative flex flex-col md:flex-row items-center gap-8">
-      {/* White background */}
-<div
-  className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 
+          {/* White background */}
+          <div
+            className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 
              h-[400px] bg-white opacity-90 rounded-lg z-0 
              border-4 border-blue-400 hidden md:block"
-></div>
-
+          ></div>
 
           {/* Slider */}
           <div className="w-full md:w-1/2 z-10 flex justify-center md:justify-start pl-18">
@@ -98,16 +98,17 @@ const FeaturedProducts = () => {
               ))}
             </h3>
             <p className="text-gray-700 mb-6">
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+              sagittis sem nibh id elit.
             </p>
             {/* Shop Now Button */}
             <button className="px-6 py-2 border border-black text-black  hover:bg-blue-500  hover:-translate-y-1 transition-all duration-500 ease-in-out transform ">
               Add to cart
             </button>
-                 <button className="px-6 py-2 border border-black text-black  hover:bg-blue-500  hover:-translate-y-1 transition-all duration-500 ease-in-out transform ">
-                    <Link href='/rout/team'   > Team Page</Link>
+            <button className="px-6 py-2 border border-black text-black  hover:bg-blue-500  hover:-translate-y-1 transition-all duration-500 ease-in-out transform ">
+              <Link href="/rout/element/team"> Team Page</Link>
             </button>
-      
           </div>
         </div>
       </div>

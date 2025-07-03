@@ -96,19 +96,19 @@ export default function CardPage() {
                   </p>
 
                   {/* Quantity Controls */}
-                  <div className="flex items-center  gap-2   mt-2">
+                  <div  className="flex w-[90px] items-center border-2 border-gray-300 gap-2 md:px-1 justify-center">
                     <button
                       onClick={() => handleDecrease(item.id)}
-                      className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-lg"
+                     className="text-gray-400 hover:text-black text-lg"
                     >
                       <FaCaretLeft />
                     </button>
-                    <span className="text-md p-2  w-[35px] font-semibold">
+                    <span className="text-sm p-2  w-[20px] font-semibold">
                       {item.quantity}
                     </span>
                     <button
                       onClick={() => handleIncrease(item.id)}
-                      className="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded text-lg"
+                     className="text-gray-400  hover:text-black text-lg"
                     >
                       <FaCaretRight />
                     </button>
@@ -128,8 +128,8 @@ export default function CardPage() {
         </div>
 
         {/* Right Column: Cart Totals */}
-        <div className="bg-gray-100  p-6 rounded-lg h-fit ">
-          <h2 className="text-xl font-bold mb-4">🧾 Cart Totals</h2>
+        <div className="bg-gray-100   p-6 rounded-lg h-fit ">
+          <h2 className="text-xl font-bold mb-4"> Cart Totals</h2>
 
           <div className="mb-4">
             <p className="text-gray-600">
