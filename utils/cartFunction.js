@@ -29,10 +29,20 @@ export default function CartFunction({ item }) {
           handleAdd();
         }
       }}
-      className="bg-blue-600 text-white px-3 w-10 h-10 
- py-2 rounded hover:bg-blue-700 flex items-center justify-center gap-2 transition-all duration-200"
+      className=" px-3  h-10 
+ py-2   flex items-center justify-center  text-2xl transition-all "
     >
-      {isAdded ? <HiShoppingBag size={20} /> : <MdShoppingCart size={20} />}
+      {isAdded ? (
+        <HiShoppingBag
+          className="hover:-translate-y-1 duration-200 transform  transition-all "
+          size={20}
+        />
+      ) : (
+        <MdShoppingCart
+          className="hover:-translate-y-1 transform duration-200  transition-all "
+          size={20}
+        />
+      )}
     </button>
   );
 }

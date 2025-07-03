@@ -4,6 +4,7 @@ import { useGetProductsQuery } from "@/features/apiSlice";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { addToCart } from "@/utils/cartSeason";
 import { useEffect, useState } from "react";
+import ReactDOM from "react-dom"; // ✅ এটি নতুন যোগ হয়েছে
 
 export default function EyeModal({ id, onClose }) {
   const { data: products } = useGetProductsQuery();
@@ -29,21 +30,21 @@ export default function EyeModal({ id, onClose }) {
 
   if (!product) return null;
 
-  return (
+  // ✅ Modal JSX — unchanged
+  const modalContent = (
     <div className="fixed inset-0 bg-opacity-50 backdrop-brightness-50 z-50 flex justify-center items-center px-2">
-      <div className="bg-white w-full max-w-[1000px]  sm:h-[360px] md:h-[500px] overflow-hidden relative grid grid-cols-2">
+      <div className="bg-white w-full max-w-[1000px] sm:h-[360px] md:h-[500px] overflow-hidden relative grid grid-cols-2">
         {/* Left Column - Image */}
-        <div className="bg-gray-100 flex ">
+        <div className="bg-gray-100 flex">
           <img
             src={product.img}
             alt={product.title}
-            className="w-full h-full  sm:max-h-[360px] md:max-h-full "
+            className="w-full h-full sm:max-h-[360px] md:max-h-full"
           />
         </div>
 
         {/* Right Column - Info */}
         <div className="relative flex bg-white flex-col justify-center items-start ps-4 sm:ps-13 pe-4 sm:pe-8">
-          {/* Close Button */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl"
@@ -76,9 +77,8 @@ export default function EyeModal({ id, onClose }) {
             sem nibh id elit.
           </p>
 
-          <div className="flex gap-2 w-full  ">
-            {/* Quantity Controller */}
-            <div className="flex items-center border-2 border-gray-300 gap-2 md:px-1  justify-center">
+          <div className="flex gap-2 w-full">
+            <div className="flex items-center border-2 border-gray-300 gap-2 md:px-1 justify-center">
               <button
                 onClick={handleDecrease}
                 className="text-gray-400 hover:text-black text-lg"
@@ -96,10 +96,9 @@ export default function EyeModal({ id, onClose }) {
               </button>
             </div>
 
-            {/* Add to Cart Button */}
             <button
               onClick={handleAddToCart}
-              className="bg-gray-950 text-white px-3 sm:px-6 md:px-14 lg:px-18 text-xs sm:text-sm md:text-base hover:bg-blue-600 duration-200  py-3"
+              className="bg-gray-950 text-white px-3 sm:px-6 md:px-14 lg:px-18 text-xs sm:text-sm md:text-base hover:bg-blue-600 duration-200 py-3"
             >
               Add to Cart
             </button>
@@ -108,4 +107,7 @@ export default function EyeModal({ id, onClose }) {
       </div>
     </div>
   );
+
+  // ✅ এইখানে শুধুমাত্র portal এ রেন্ডার করলাম
+  return ReactDOM.createPortal(modalContent, document.body);
 }
