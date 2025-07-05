@@ -125,7 +125,8 @@ const navItems = [
   },
   {
     name: "Eye", href: "/rout/eye"
-  }
+  },
+  { name: "Wish List", href : "/rout/wishlist"}
 
 ];
 
